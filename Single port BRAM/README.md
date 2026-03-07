@@ -128,8 +128,14 @@ Single Port BRAM is commonly used in:
 * Verilog HDL
 * Xilinx Vivado Simulator
 * GitHub for version control
+  
+---
+## Author
 
-
+**Chandra Sekhar Tanuku**
+---
+* B.Tech Electronics and Communication Engineering
+* Focus Areas: **VLSI Design, FPGA, Digital Communication Systems**
 ---
 
 ## License
