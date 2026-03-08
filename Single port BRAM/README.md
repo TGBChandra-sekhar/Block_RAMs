@@ -137,6 +137,3 @@ Single Port BRAM is commonly used in:
 * Focus Areas: **VLSI Design, FPGA, Digital Communication Systems**
 ---
 
-/*## License
-
-This project is open-source and can be used for educational purposes.*/
