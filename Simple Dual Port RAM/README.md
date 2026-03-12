@@ -56,6 +56,8 @@ Operation:
 
 ---
 
+---
+
 ## Testbench Overview
 
 The testbench performs the following steps:
@@ -70,32 +72,38 @@ The testbench performs the following steps:
 
 ## Example Simulation Output
 
+```
 ------ WRITE OPERATION ------
 Writing: addr=0 data=0
 Writing: addr=1 data=10
 Writing: addr=2 data=20
 Writing: addr=3 data=30
-...
+
 ------ READ OPERATION ------
 Reading: addr=0 data=0
 Reading: addr=1 data=10
 Reading: addr=2 data=20
 Reading: addr=3 data=30
-...
+```
 
 ---
 
 ## Project Structure
 
+```
 simple-dual-port-ram/
 │
-├── simple_dual_port_ram.v
+├── rtl/
+│   └── simple_dual_port_ram.v
 │
-├── tb_simple_dual_port_ram.v
+├── tb/
+│   └── simple_dual_port_ram_tb.v
 │
-├── simulation.log
+├── sim/
+│   └── simulation.log
 │
 └── README.md
+```
 
 ---
 
@@ -118,6 +126,7 @@ Simple Dual-Port RAM is commonly used in:
 * GitHub for version control
 
 ---
+
 ## Author
 
 **Chandra Sekhar Tanuku**
