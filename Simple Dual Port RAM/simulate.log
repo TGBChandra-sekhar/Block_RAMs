@@ -1,0 +1,29 @@
+Compiling module xil_defaultlib.simple_dual_port_ram_default
+Compiling module xil_defaultlib.tb_dual_port_ram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_dual_port_ram_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+------ WRITE OPERATION ------
+Writing : addr = 0 | write_data = 0
+Writing : addr = 1 | write_data = 10
+Writing : addr = 2 | write_data = 20
+Writing : addr = 3 | write_data = 30
+Writing : addr = 4 | write_data = 40
+Writing : addr = 5 | write_data = 50
+Writing : addr = 6 | write_data = 60
+Writing : addr = 7 | write_data = 70
+Writing : addr = 8 | write_data = 80
+Writing : addr = 9 | write_data = 90
+------ READ OPERATION ------
+Reading : addr = 0 | read_data_data = 0
+Reading : addr = 1 | read_data_data = 10
+Reading : addr = 2 | read_data_data = 20
+Reading : addr = 3 | read_data_data = 30
+Reading : addr = 4 | read_data_data = 40
+Reading : addr = 5 | read_data_data = 50
+Reading : addr = 6 | read_data_data = 60
+Reading : addr = 7 | read_data_data = 70
+Reading : addr = 8 | read_data_data = 80
+Reading : addr = 9 | read_data_data = 90
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 3312.914 ; gain = 0.000
