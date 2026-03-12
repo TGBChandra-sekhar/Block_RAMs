@@ -54,42 +54,6 @@ Operation:
 * **Read operation:**
   Data at `raddr` is read and appears on `dout` on the next clock cycle.
 
----
-
-## Verilog Implementation
-
-```verilog
-`timescale 1ns / 1ps
-
-module simple_dual_port_ram #(
-    parameter DATA_WIDTH = 8,
-    parameter ADDR_WIDTH = 8
-)(
-    input clk,
-
-    // Write Port
-    input we,
-    input [ADDR_WIDTH-1:0] waddr,
-    input [DATA_WIDTH-1:0] din,
-
-    // Read Port
-    input [ADDR_WIDTH-1:0] raddr,
-    output reg [DATA_WIDTH-1:0] dout
-);
-
-localparam DEPTH = 1 << ADDR_WIDTH;
-
-(* ram_style = "block" *)
-reg [DATA_WIDTH-1:0] mem [0:DEPTH-1];
-
-always @(posedge clk) begin
-    if (we)
-        mem[waddr] <= din;
-
-    dout <= mem[raddr];
-end
-
-endmodule
 ```
 
 ---
@@ -129,14 +93,11 @@ Reading: addr=3 data=30
 ```
 simple-dual-port-ram/
 │
-├── rtl/
-│   └── simple_dual_port_ram.v
+├── simple_dual_port_ram.v
 │
-├── tb/
-│   └── simple_dual_port_ram_tb.v
+├── tb_simple_dual_port_ram.v
 │
-├── sim/
-│   └── simulation.log
+├── simulation.log
 │
 └── README.md
 ```
@@ -162,7 +123,9 @@ Simple Dual-Port RAM is commonly used in:
 * GitHub for version control
 
 ---
-
 ## Author
 
-RTL / FPGA Learning Project
+**Chandra Sekhar Tanuku**
+* B.Tech Electronics and Communication Engineering
+* Focus Areas: **VLSI Design, FPGA, Digital Communication Systems**
+---
