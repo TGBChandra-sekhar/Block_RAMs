@@ -4,45 +4,42 @@ module single_port_bram_tb();
 
     parameter ADDR_WIDTH = 8;
     parameter DATA_WIDTH = 8;
-    parameter DEPTH = 1 << ADDR_WIDTH;
+    
     reg  clk;
-    reg  wn;
+    reg  we;
     reg  [ADDR_WIDTH-1:0]addr;     
-    reg  [DATA_WIDTH-1:0]din;      
-    wire [DATA_WIDTH-1:0]dout;
+    reg  [DATA_WIDTH-1:0]write_data;      
+    wire [DATA_WIDTH-1:0]read_data;
     
     single_port_bram dut (
         .clk    (clk ),
-        .wn     (wn  ),
+        .we     (we  ),
         .addr   (addr),
-        .din    (din ),
-        .dout   (dout)
+        .write_data    (write_data ),
+        .read_data   (read_data)
     );
     integer i;
     
     always #5 clk = ~clk;  // 100 MHz
     initial begin
-        {clk,wn,addr,din} = 0;
+        {clk,we,addr,write_data} = 0;
         #10;
+        
         $display("------ WRITE OPERATION ------");
-        wn = 1;
+        we = 1;
         for(i = 0; i < 10; i = i + 1) begin
-            @(posedge clk);
             addr = i;
-            din  = i * 10;
-            $display("Writing: addr=%0d | Write_data=%0d | Read_data=%0d", addr, din,dout);
+            write_data  = i * 10;
+            $display("Writing: addr=%0d | Write_data=%0d | Read_data=%0d", addr, write_data,read_data);
+            #10;
         end
 
-        @(posedge clk);
-        wn = 0;
-
         $display("------ READ OPERATION ------");
-
+        we = 0; 
         for(i = 0; i < 10; i = i + 1) begin
-            @(posedge clk);
             addr = i;
-            @(posedge clk); // For Display value at current addr (not prev addr)
-            $display("Reading: addr=%0d | Read_data=%0d", addr, dout);
+            $display("Reading: addr=%0d | Read_data=%0d", addr, read_data);
+            #10;
         end
         #50;
     end
