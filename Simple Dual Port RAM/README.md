@@ -100,7 +100,6 @@ simple-dual-port-ram/
 ├── simulation.log
 │
 └── README.md
-```
 
 ---
 
