@@ -1,0 +1,73 @@
+Compiling module xil_defaultlib.tb_rom
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rom_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+
+ **READ ONLY MEMORY**
+Reading: Addr=000000 | Dout=0200a
+Reading: Addr=000001 | Dout=00300
+Reading: Addr=000010 | Dout=08101
+Reading: Addr=000011 | Dout=04000
+Reading: Addr=000100 | Dout=08601
+Reading: Addr=000101 | Dout=0233a
+Reading: Addr=000110 | Dout=00300
+Reading: Addr=000111 | Dout=08602
+Reading: Addr=001000 | Dout=02310
+Reading: Addr=001001 | Dout=0203b
+Reading: Addr=001010 | Dout=08300
+Reading: Addr=001011 | Dout=04002
+Reading: Addr=001100 | Dout=08201
+Reading: Addr=001101 | Dout=00500
+Reading: Addr=001110 | Dout=04001
+Reading: Addr=001111 | Dout=02500
+Reading: Addr=010000 | Dout=00340
+Reading: Addr=010001 | Dout=00241
+Reading: Addr=010010 | Dout=04002
+Reading: Addr=010011 | Dout=08300
+Reading: Addr=010100 | Dout=08201
+Reading: Addr=010101 | Dout=00500
+Reading: Addr=010110 | Dout=08101
+Reading: Addr=010111 | Dout=00602
+Reading: Addr=011000 | Dout=04003
+Reading: Addr=011001 | Dout=0241e
+Reading: Addr=011010 | Dout=00301
+Reading: Addr=011011 | Dout=00102
+Reading: Addr=011100 | Dout=02122
+Reading: Addr=011101 | Dout=02021
+Reading: Addr=011110 | Dout=00301
+Reading: Addr=011111 | Dout=00102
+Reading: Addr=100000 | Dout=02222
+Reading: Addr=100001 | Dout=04001
+Reading: Addr=100010 | Dout=00342
+Reading: Addr=100011 | Dout=0232b
+Reading: Addr=100100 | Dout=00900
+Reading: Addr=100101 | Dout=00302
+Reading: Addr=100110 | Dout=00102
+Reading: Addr=100111 | Dout=04002
+Reading: Addr=101000 | Dout=00900
+Reading: Addr=101001 | Dout=08201
+Reading: Addr=101010 | Dout=02023
+Reading: Addr=101011 | Dout=00303
+Reading: Addr=101100 | Dout=02433
+Reading: Addr=101101 | Dout=00301
+Reading: Addr=101110 | Dout=04004
+Reading: Addr=101111 | Dout=00301
+Reading: Addr=110000 | Dout=00102
+Reading: Addr=110001 | Dout=02137
+Reading: Addr=110010 | Dout=02036
+Reading: Addr=110011 | Dout=00301
+Reading: Addr=110100 | Dout=00102
+Reading: Addr=110101 | Dout=02237
+Reading: Addr=110110 | Dout=04004
+Reading: Addr=110111 | Dout=00304
+Reading: Addr=111000 | Dout=04040
+Reading: Addr=111001 | Dout=02500
+Reading: Addr=111010 | Dout=02500
+Reading: Addr=111011 | Dout=02500
+Reading: Addr=111100 | Dout=0030d
+Reading: Addr=111101 | Dout=02341
+Reading: Addr=111110 | Dout=08201
+Reading: Addr=111111 | Dout=0400d
+$finish called at time : 755 ns : File "D:/Tools/Xilinx_Vivado/GNSS_SAC/BRAM/BRAM.srcs/sim_1/new/tb_rom.v" Line 34
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2965.422 ; gain = 2.246
