@@ -1,25 +1,17 @@
 `timescale 1ns / 1ps
 
-module dual_port_ram(
-        clk,
-        we,
-        w_addr,
-        write_data,
-        r_addr,
-        read_data
+module simple_dual_port_ram #(
+    parameter ADDR_WIDTH = 10,
+    parameter DATA_WIDTH = 16
+    )(
+    input clk,
+    input we,
+    input      [ADDR_WIDTH-1:0] w_addr,
+    input      [DATA_WIDTH-1:0] write_data,
+    input      [ADDR_WIDTH-1:0] r_addr,
+    output reg [DATA_WIDTH-1:0] read_data
     );
-    parameter ADDR_WIDTH = 10;
-    parameter DATA_WIDTH = 16;
-    
-    input clk;
-    // Write Port
-    input we;
-    input [ADDR_WIDTH-1:0]w_addr;
-    input [DATA_WIDTH-1:0]write_data;
-    // Read Port
-    input      [ADDR_WIDTH-1:0]r_addr;
-    output reg [DATA_WIDTH-1:0]read_data;
-    
+        
     localparam DEPTH = 1 << ADDR_WIDTH;
     reg [DATA_WIDTH-1:0] mem [0:DEPTH-1];
     
