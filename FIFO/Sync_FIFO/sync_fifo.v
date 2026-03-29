@@ -42,7 +42,7 @@ module sync_fifo #(
         end 
         else if(rd_en && !empty) begin
             rdata <= mem[rptr[PTR_WIDTH-1:0]];
-            rptr <= rptr + 1'b1;
+            rptr  <= rptr + 1'b1;
         end
     end
 
