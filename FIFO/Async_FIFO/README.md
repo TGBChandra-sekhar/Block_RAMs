@@ -34,7 +34,7 @@ Async FIFO provides:
 ## Async FIFO Architecture
 
 <p align="center">
-  <img src="C:\Users\Tanuku Devisaikumar\OneDrive - Aditya Educational Institutions\Pictures\Screenshots\Async_FIFO.gif" width="650">
+  <img src="C:\Users\Tanuku Devisaikumar\OneDrive - Aditya Educational Institutions\Pictures\Screenshots\Async_FIFO.png" width="650">
   <br>
   <em>Asynchronous FIFO with Gray-coded pointer synchronization</em>
 </p>
