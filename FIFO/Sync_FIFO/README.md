@@ -76,7 +76,7 @@ Sync_FIFO/
 ├── sync_fifo.v
 ├── tb_sync_fifo.v
 ├── simulate.log
-├── waveform.png
+├── sync_fifo_waveform.png
 └── README.md
 ```
 ---
