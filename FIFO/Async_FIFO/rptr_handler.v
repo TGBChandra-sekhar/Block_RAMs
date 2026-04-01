@@ -3,7 +3,7 @@ module rptr_handler #(
     parameter ADDR_WIDTH = 4
     )(
     input  rclk, rrst_n, rd_en,           
-    input  [ADDR_WIDTH :0] g_wptr_sync,    // Write pointer (gray) - synchronised to read clock domain
+    input  [ADDR_WIDTH :0] g_wptr_sync,    // Write pointer (gray) - synchronised to rclk
     output [ADDR_WIDTH-1:0] raddr,         // Read address
     output reg [ADDR_WIDTH :0] g_rptr,     // Read pointer
     output reg rempty                      // Empty flag
