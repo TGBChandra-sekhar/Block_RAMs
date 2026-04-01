@@ -13,7 +13,7 @@ module FIFO_memory #(
     output  rempty
     );
 
-    localparam DEPTH = 1<<ADDR_WIDTH;    // NOTE: FIFO depth must be power of 2              
+    localparam DEPTH = 1<<ADDR_WIDTH;                 
     reg [DATA_WIDTH-1:0] mem [0:DEPTH-1];            
 
     // Write Operation
