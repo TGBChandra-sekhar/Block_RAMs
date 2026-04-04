@@ -40,7 +40,7 @@ Async FIFO provides:
 </p> -->
 
 ---
-![Async FIFO Architecture]("C:\Users\Tanuku Devisaikumar\OneDrive - Aditya Educational Institutions\Pictures\Screenshots\Async_FIFO.png")
+![Async FIFO Architecture]("Async_FIFO.png")
 
 ## 4. Metastability (Core Problem)
 
