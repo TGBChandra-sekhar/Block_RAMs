@@ -33,13 +33,14 @@ Async FIFO provides:
 ## 3. Basic Architecture
 ## Async FIFO Architecture
 
-<p align="center">
+<!-- <p align="center">
   <img src="C:\Users\Tanuku Devisaikumar\OneDrive - Aditya Educational Institutions\Pictures\Screenshots\Async_FIFO.png" width="650">
   <br>
   <em>Asynchronous FIFO with Gray-coded pointer synchronization</em>
-</p>
+</p> -->
 
 ---
+![Async FIFO Architecture](Async_FIFO.png)
 
 ## 4. Metastability (Core Problem)
 
