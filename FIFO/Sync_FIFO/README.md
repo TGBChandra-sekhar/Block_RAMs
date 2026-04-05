@@ -18,7 +18,7 @@ The design is suitable for buffering data between modules operating in the **sam
 
 ### Sync FIFO Architecture
 <p align="center">
-  <img src="sync_fifo.jpeg" width="700">
+  <img src="sync_fifo.png" width="700">
   <br>
   <em>Asynchronous FIFO Architecture</em>
 </p>
