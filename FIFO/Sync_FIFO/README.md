@@ -17,7 +17,11 @@ The design is suitable for buffering data between modules operating in the **sam
 ---
 
 ### Sync FIFO Architecture
-![Async FIFO Architecture](sync_fifo.jpeg)
+<p align="center">
+  <img src="sync_fifo.jpeg" width="700">
+  <br>
+  <em>Asynchronous FIFO Architecture</em>
+</p>
 
 - **Write Pointer (wptr):** Controls write address increment  
 - **Read Pointer (rptr):** Controls read address increment  
