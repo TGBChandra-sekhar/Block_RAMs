@@ -63,7 +63,7 @@ Effects:
 - Resolution time is unpredictable
 - Can propagate errors into digital logic
 
-⚠️ Metastability is a **hardware phenomenon**, not visible in RTL simulation.
+** Metastability is a **hardware phenomenon**, not visible in RTL simulation.
 
 ---
 
@@ -104,7 +104,7 @@ If sampled asynchronously:
 - Receiver may see an **invalid pointer**
 - FULL / EMPTY logic may fail
 
-❌ Even 2-FF synchronizers **cannot fix multi-bit incoherency**
+ Even 2-FF synchronizers **cannot fix multi-bit incoherency**
 
 ---
 
@@ -128,7 +128,7 @@ Gray: 010 → 110 (only 1 bit changes)
   - New value
 - Never an illegal or intermediate value
 
-✔️ This makes **multi-bit pointer synchronization safe**
+ This makes **multi-bit pointer synchronization safe**
 
 ---
 
@@ -172,7 +172,7 @@ if (rd_en && !empty)
     rptr_bin <= rptr_bin + 1;
 ```
 
-➡️ Pointers are never modified in the opposite domain
+-> Pointers are never modified in the opposite domain
 
 ---
 
