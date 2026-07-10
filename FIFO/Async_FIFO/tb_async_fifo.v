@@ -41,10 +41,10 @@ module tb_async_fifo;
         wrst_n = 1;
         rrst_n = 1;
 
-        $display("---- RESET RELEASED ----");
+        $display("---- Reset Released ----");
 
         // Write DATA into FIFO
-        $display("---- WRITE PHASE ----");
+        $display("---- Write phase ----");
         for (i = 0; i < DEPTH; i = i + 1) begin
             @(posedge wclk);
             if (!wfull) begin
@@ -67,7 +67,7 @@ module tb_async_fifo;
             $display("FIFO FULL detected correctly");
 
         // Read DATA from FIFO
-        $display("---- READ PHASE ----");
+        $display("---- Read phase ----");
         #50;  // Let pointers synchronize
 
         for (i = 0; i < DEPTH; i = i + 1) begin
@@ -84,7 +84,7 @@ module tb_async_fifo;
             $display("FIFO EMPTY detected correctly");
 
         // Mixed Read/Write (CDC stress)
-        $display("---- MIXED READ/WRITE ----");
+        $display("---- Mixed Read/Write ----");
 
         fork
             begin
