@@ -15,8 +15,8 @@ module single_port_bram #(
     reg [DATA_WIDTH-1:0] mem [0:DEPTH-1];
     
     always@(posedge clk) begin
-        if(wn)                 // wn = 1; (write)
-            mem[addr] <= din;  // Data Write into memory
-        dout <= mem[addr];     // Data Read from memory
+        if(we)                        // we = 1; (write)
+            mem[addr] <= write_data;  // Data Write into memory
+        read_data <= mem[addr];       // Data Read from memory
     end
 endmodule
